@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Trivia Game</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></head>
+   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="assets/javascript/app.js"></script>
+</head>
+<body>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Disney Songs Trivia Game</h1>
+      <p class="lead">Let's see how much you know about Disney songs! Press the start button to begin!</p>
+      <button type="button" class="btn btn-dark" id="start">Start</button>
+      <p class="timeRemaining">Time Remaining: <label id="secsRemaining"></label> Seconds</p>
+    </div>
+  </div>
+<div id="questions">   
+<div class="container1">
+  <p>Question 1: Which Disney movie does You can Fly! You can Fly! You can Fly! belong to?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="radioQ1" id="exampleRadios1" value="q1_o1">
+    <label class="form-check-label" for="exampleRadios1">
+      Pinocchio
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="radioQ1" id="exampleRadios2" value="q1_o2">
+    <label class="form-check-label" for="exampleRadios2">
+      The Jungle Book
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="radioQ1" id="exampleRadios2" value="q1_o3">
+    <label class="form-check-label" for="exampleRadios2">
+      Peter Pan
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="radioQ1" id="exampleRadios2" value="q1_o4">
+    <label class="form-check-label" for="exampleRadios2">
+      Snow White
+    </label>
+  </div>
+</div>
+<div class="container2">
+    <p>Question 2: Who is the performer of the song Friend Like me in Aladdin?</p>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radioQ2" id="exampleRadios1" value="q2_o1">
+      <label class="form-check-label" for="exampleRadios1">
+        Jim Carrey
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radioQ2" id="exampleRadios2" value="q2_o2">
+      <label class="form-check-label" for="exampleRadios2">
+        Robin Williams
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radioQ2" id="exampleRadios2" value="q2_o3">
+      <label class="form-check-label" for="exampleRadios2">
+        Hugh Jackman
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radioQ2" id="exampleRadios2" value="q2_o4">
+      <label class="form-check-label" for="exampleRadios2">
+        Ben Stiller
+      </label>
+    </div>
+  </div>
+  <div class="container3">
+    <p>Question 3: Where were Jasmine and Aladdin when they were singing A Whole New World?</p>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radioQ3" id="exampleRadios1" value="q3_o1">
+      <label class="form-check-label" for="exampleRadios1">
+        In Jasmine's room
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radioQ3" id="exampleRadios2" value="q3_o2">
+      <label class="form-check-label" for="exampleRadios2">
+        On the roof
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radioQ3" id="exampleRadios2" value="q3_o3">
+      <label class="form-check-label" for="exampleRadios2">
+        On the magic carpet
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radioQ3" id="exampleRadios2" value="q3_o4">
+      <label class="form-check-label" for="exampleRadios2">
+        In the market
+      </label>
+    </div>
+  </div>
+  <div class="container4">
+        <p>Question 4: How many different languages did Let it Go translated to?</p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radioQ4" id="exampleRadios1" value="q4_o1">
+          <label class="form-check-label" for="exampleRadios1">
+            20
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radioQ4" id="exampleRadios2" value="q4_o2">
+          <label class="form-check-label" for="exampleRadios2">
+            6
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radioQ4" id="exampleRadios2" value="q4_o3">
+          <label class="form-check-label" for="exampleRadios2">
+           60
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radioQ4" id="exampleRadios2" value="q4_o4">
+          <label class="form-check-label" for="exampleRadios2">
+            47
+          </label>
+        </div>
+      </div>
+  <div class="container5">
+    <p>Question 5: Which song is the first Disney song that won an Oscar?</p>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radioQ5" id="exampleRadios1" value="q5_o1">
+      <label class="form-check-label" for="exampleRadios1">
+        Beauty and the Beast
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radioQ5" id="exampleRadios2" value="q5_o2">
+      <label class="form-check-label" for="exampleRadios2">
+        Let it Go
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radioQ5" id="exampleRadios2" value="q5_o3">
+      <label class="form-check-label" for="exampleRadios2">
+        Hakuna Matata
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radioQ5" id="exampleRadios2" value="q5_o4">
+      <label class="form-check-label" for="exampleRadios2">
+        When you wish upon a star
+      </label>
+    </div>
+  </div>
+  <div class="container6">
+    <p>Question 6: Who composed Lion King's song, Circle of Life? </p>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radioQ6" id="exampleRadios1" value="q6_o1">
+      <label class="form-check-label" for="exampleRadios1">
+        Elton John
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radioQ6" id="exampleRadios2" value="q6_o2">
+      <label class="form-check-label" for="exampleRadios2">
+        Michael Jackson
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radioQ6" id="exampleRadios2" value="q6_o3">
+      <label class="form-check-label" for="exampleRadios2">
+        Celine Dion
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radioQ6" id="exampleRadios2" value="q6_o4">
+      <label class="form-check-label" for="exampleRadios2">
+        Phil Collins
+      </label>
+    </div>
+  </div>
+  <div class="container7">
+    <p>Question 7: What color below is not in the song Colors of the Wind?</p>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radioQ7" id="exampleRadios1" value="q7_o1">
+      <label class="form-check-label" for="exampleRadios1">
+        Blue
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radioQ7" id="exampleRadios2" value="q7_o2">
+      <label class="form-check-label" for="exampleRadios2">
+        Red
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radioQ7" id="exampleRadios2" value="q7_o3">
+      <label class="form-check-label" for="exampleRadios2">
+        Copper
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radioQ7" id="exampleRadios2" value="q7_o4">
+      <label class="form-check-label" for="exampleRadios2">
+        White
+      </label>
+    </div>
+  </div>
+  <div class="container8">
+        <p>Question 8: Who first recorded the song Beauty and the Beast?</p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radioQ8" id="exampleRadios1" value="q8_o1">
+          <label class="form-check-label" for="exampleRadios1">
+            Celine Dion
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radioQ8" id="exampleRadios2" value="q8_o2">
+          <label class="form-check-label" for="exampleRadios2">
+            Emma Watson
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radioQ8" id="exampleRadios2" value="q8_o3">
+          <label class="form-check-label" for="exampleRadios2">
+            Peapo Bryson
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radioQ8" id="exampleRadios2" value="q8_o4">
+          <label class="form-check-label" for="exampleRadios2">
+            Angela Lansbury
+          </label>
+        </div>
+      </div>
+      <button type="button" class="btn btn-dark" id="submit">Submit</button>
+</div>
+<div class="container-fluid" id="scores">
+  <span>Correct Answers: </span><label id="correctAnswers"></label><br>
+  <span>Wrong Answers: </span><label id="wrongAnswers"></label><br>
+</div>
+</body>  
+</html>

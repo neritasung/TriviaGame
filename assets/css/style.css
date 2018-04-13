@@ -1,0 +1,32 @@
+.jumbotron{
+    background-image:url("../images/disney.jpg");
+    opacity: 0.7;
+}
+.container{
+    background-color: white;
+    opacity: 0.95;
+    color: black;
+}
+#start{
+    margin-bottom: 20px;
+}
+.timeRemaining{
+    font-size: 26pt;
+    font-weight: bold;
+}
+#secsRemaining{
+    font-size: 26pt;
+    font-weight: bold;
+}
+.container1, .container2, .container3, .container4, .container5, .container6, .container7, .container8{
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+#submit{
+    margin-bottom: 50px;
+    margin-left: 150px;
+}
+#scores{
+    font-size: 26pt;
+    margin-left: 150px;
+}
