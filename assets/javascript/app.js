@@ -10,6 +10,7 @@ var rightAnswers = ["q1_o3","q2_o2","q3_o3","q4_o4","q5_o4","q6_o1","q7_o2","q8_
 var userInput = [];
 var correctAnswer = 0;
 var wrongAnswer = 0;
+var unAnswered = 0;
 var timeRemaining = 60;
 var timerID;
 
@@ -38,7 +39,11 @@ $("body").on("click", "#submit", function(){
     resultCount();
     $("#questions").hide();
     $("#start").hide();
-    $("#scores").show();    
+    $("#scores").show(); 
+    // display scores
+    $("#correctAnswers").text(correctAnswer);
+    $("#wrongAnswers").text(wrongAnswer);
+    $("#unAnswer").text(unAnswered);   
     timeRemaining = 60;
 });
 
@@ -62,19 +67,27 @@ function resultCount(){
     console.log(checkQ8);
     userInput = [checkQ1, checkQ2, checkQ3, checkQ4, checkQ5, checkQ6, checkQ7, checkQ8];
     for (var i=0; i<userInput.length; i++){
+        console.log("Inside the for loop");
         if(userInput[i] === rightAnswers[i]){
-        correctAnswer++;            
+        correctAnswer++;  
+        console.log("Correct"+ correctAnswer);          
         }
-        if (userInput[i] === null){
-            wrongAnswer++;           
+        else if (userInput[i] === undefined){
+            //wrongAnswer++;   
+            unAnswered++;     
+            console.log("unAnswered"+ unAnswered);   
         }
         else {
-            wrongAnswer++;            
+            wrongAnswer++;    
+            console.log("Wrong" + wrongAnswer);        
         }
     };
 $('input[type=radio]').prop('checked', false);  
 }
-// display scores
-$("#correctAnswers").text(correctAnswer);
-$("#wrongAnswers").text(wrongAnswer);
+
 });
+
+
+//correct Answer
+//wrong answer
+//unAnswered
